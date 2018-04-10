@@ -1,6 +1,6 @@
 package org.refreshing.training;
 import java.util.*;
-
+/*https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem*/
 public class Solve {
 	private static final Scanner scanner=new Scanner(System.in);
 	
@@ -69,3 +69,4 @@ public class Solve {
 	}
 	
 }
+
