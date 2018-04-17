@@ -72,6 +72,27 @@ public class Problems {
 				}
 		return -1;
 	}
-
+	
+	//Recursion + Dynamic Programming
+	static int temp;
+	static HashMap<Integer,Integer> memory=new HashMap<Integer,Integer>();
+	public static int fibonaciWithMemorizing(int n) {
+		//System.out.println(memory.size());
+		if(n==2)
+			return 1;
+		else 
+			if(n==1)
+				return 1;
+			else
+				if(n>2) {
+					if(!memory.containsKey(n)) {
+						temp=fibonaciWithMemorizing(n-1)+fibonaciWithMemorizing(n-2);
+						memory.put(n,temp);
+					}
+						return memory.get(n);
+					
+				}
+		return -1;
+	}
 	
 }
