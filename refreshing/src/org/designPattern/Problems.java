@@ -59,4 +59,19 @@ public class Problems {
         }
     return results;
 	}
+	//Recursion
+	public static int fibonaci(int n) {
+		if(n==2)
+			return 1;
+		else 
+			if(n==1)
+				return 1;
+			else
+				if(n>2) {
+					return fibonaci(n-1)+fibonaci(n-2);
+				}
+		return -1;
+	}
+
+	
 }
